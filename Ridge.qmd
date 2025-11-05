@@ -9,7 +9,6 @@ number-sections: true
 
 load the required library. And load the data.
 
-
 ```{r}
 #| warning: false 
 #| message: false
@@ -38,23 +37,19 @@ cigarette_data <- data.frame(
 
 ```
 
-
-
 ## Prepare the data for ridge regression
-x values should be in a matrix rather than a vector
 
 
 ```{r}
 
-x <- as.matrix(cigarette_data[, c("Tar", "Nicotine", "Weight")])
+x <- cigarette_data[, c("Tar", "Nicotine", "Weight")]
 
 y <- cigarette_data$Carbon_Monoxide
 
 ```
 
-
-
 ## Fit ridge regression model
+
 use the x and y data from above, together with alpha = 0 and lambda = 0.48
 
 ```{r}
@@ -62,7 +57,6 @@ use the x and y data from above, together with alpha = 0 and lambda = 0.48
 ridge_model <- glmnet(x, y, alpha = 0, lambda = 0.48)
 
 ```
-
 
 ## Get the ridge parameter estimates
 
@@ -73,8 +67,6 @@ ridge_coef <- coef(ridge_model)
 print(ridge_coef)
 
 ```
-
-
 
 ## Compare with Ordinary Least Squares (OLS)
 
@@ -88,22 +80,11 @@ print(ridge_coef)
 
 ```
 
-
-
 ## Check correlation matrix to understand multi collinearity
+
 ```{r}
 correlation_matrix <- cor(x)
 
 print(correlation_matrix)
 
 ```
-
-
-
-
-
-
-
-
-
-

@@ -1,4 +1,5 @@
 "0",""
-"0","x <- as.matrix(cigarette_data[, c(""Tar"", ""Nicotine"", ""Weight"")])"
+"0","x <- cigarette_data[, c(""Tar"", ""Nicotine"", ""Weight"")]"
+"0",""
 "0","y <- cigarette_data$Carbon_Monoxide"
 "0",""
