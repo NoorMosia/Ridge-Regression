@@ -1,0 +1,4 @@
+"0",""
+"0","ridge_model <- glmnet(x, y, alpha = 0, lambda = 0.48)"
+"0",""
+"0",""
