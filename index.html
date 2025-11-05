@@ -138,9 +138,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="prepare-the-data-for-ridge-regression" class="level2" data-number="2">
 <h2 data-number="2" class="anchored" data-anchor-id="prepare-the-data-for-ridge-regression"><span class="header-section-number">2</span> Prepare the data for ridge regression</h2>
-<p>x values should be in a matrix rather than a vector</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">as.matrix</span>(cigarette_data[, <span class="fu">c</span>(<span class="st">"Tar"</span>, <span class="st">"Nicotine"</span>, <span class="st">"Weight"</span>)])</span>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> cigarette_data[, <span class="fu">c</span>(<span class="st">"Tar"</span>, <span class="st">"Nicotine"</span>, <span class="st">"Weight"</span>)]</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> cigarette_data<span class="sc">$</span>Carbon_Monoxide</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>

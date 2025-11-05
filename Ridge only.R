@@ -28,7 +28,7 @@ cigarette_data <- data.frame(
 
 
 # Prepare the data for ridge regression
-x <- as.matrix(cigarette_data[, c("Tar", "Nicotine", "Weight")])
+x <- cigarette_data[, c("Tar", "Nicotine", "Weight")]
 y <- cigarette_data$Carbon_Monoxide
 
 
